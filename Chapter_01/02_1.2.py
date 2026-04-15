@@ -1,3 +1,4 @@
+#Versi 1
 print("Welcome to Python")
 print("Welcome to Python")
 print("Welcome to Python")
