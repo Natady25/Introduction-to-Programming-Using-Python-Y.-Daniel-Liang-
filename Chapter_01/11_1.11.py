@@ -1,3 +1,4 @@
+# Versi 1
 birth_in_7_sec = 1
 birth_per_hour = 3600 // 7
 birth_per_day = 24 * birth_per_hour
@@ -21,3 +22,23 @@ while years < 6:
 	print("Total population in year", years, "is =", a)
 	years += 1
 	a += add_pop_per_year
+
+# Versi 2
+population = 312032486
+day = 365
+
+birth_seconds = 7
+death_seconds = 13
+immigrant_seconds = 45
+
+seconds_year = day * 24 * 60 * 60
+
+birth_in_year = seconds_year // birth_seconds
+death_in_year = seconds_year // death_seconds
+immigrant_in_year = seconds_year // immigrant_seconds
+
+net_population = birth_in_year - death_in_year + immigrant_in_year
+
+for year in range(1, 6):
+  population += net_population
+  print(f"Year {year} population = {population}")
