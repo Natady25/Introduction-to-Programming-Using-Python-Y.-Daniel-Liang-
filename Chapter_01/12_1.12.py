@@ -1,3 +1,4 @@
+#imprt turtle
 import turtle
 turtle.showturtle()
 
@@ -25,4 +26,41 @@ turtle.forward(50)
 turtle.right(90)
 turtle.pendown()
 turtle.forward(100)
+turtle.done()
+
+# Versi 2
+import turtle
+turtle.showturtle()
+turtle.right(90)
+turtle.forward(50)
+turtle.penup()
+turtle.goto(50,0)
+turtle.right(90)
+turtle.pendown()
+turtle.forward(100)
+turtle.penup()
+turtle.goto(0,50)
+turtle.pendown()
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+turtle.done()
+
+# Versi 3
+import turtle
+turtle.showturtle()
+turtle.right(90)
+for i in range(4):
+  for j in range(4):
+    turtle.forward(50)
+    turtle.left(90)
+  turtle.right(90)
 turtle.done()
