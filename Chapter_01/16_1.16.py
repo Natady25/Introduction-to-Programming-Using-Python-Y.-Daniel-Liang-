@@ -36,9 +36,9 @@ turtle.done()
 import turtle
 turtle.showturtle()
 
-posisi_awal = [(-50, 0), (50, 0), (-50, -100), (50, -100)]
+initial_position = [(-50, 0), (50, 0), (-50, -100), (50, -100)]
 
-for x, y in posisi_awal:
+for x, y in initial_position:
   turtle.penup()
   turtle.goto(x, y)
   turtle.pendown()
